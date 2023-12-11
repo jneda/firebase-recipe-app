@@ -1,4 +1,7 @@
+// source: https://stackoverflow.com/a/76385223
+
 import { NavLink, Outlet } from "react-router-dom";
+import favicon from "../assets/favicon.svg";
 
 type AppLayoutProps = {
   children?: React.ReactNode;
@@ -7,10 +10,26 @@ type AppLayoutProps = {
 export default function AppLayout({ children }: AppLayoutProps) {
   return (
     <>
-      <header>
-        <span>Hello!</span>
+      <header
+        style={{
+          display: "flex",
+          alignItems: "center",
+          height: "2rem",
+        }}
+      >
+        <img
+          src={favicon}
+          alt="Recipe Calculator logo"
+          style={{ height: "2rem" }}
+        />
+        <span>Recipe Calculator</span>
         <nav>
-          <ul>
+          <ul
+            style={{
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
             <li>
               <NavLink to="/">Home</NavLink>
             </li>
