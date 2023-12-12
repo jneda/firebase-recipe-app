@@ -1,7 +1,7 @@
 // source: https://stackoverflow.com/a/76385223
 
 import { NavLink, Outlet } from "react-router-dom";
-import favicon from "../assets/favicon.svg";
+import favicon from "/favicon.svg";
 
 type AppLayoutProps = {
   children?: React.ReactNode;
