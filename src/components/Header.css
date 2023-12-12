@@ -1,0 +1,44 @@
+header {
+  display: flex;
+  align-items: center;
+  padding: 0 1.4rem;
+}
+
+header > * {
+  margin: 0.6rem;
+}
+
+header img {
+  max-height: 3rem;
+}
+
+header span {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+}
+
+header li {
+  margin: 0.6rem;
+  font-size: 1.2rem;
+}
+
+header a {
+  color: #dfdfdf;
+}
+
+header a:active,
+header a:hover {
+  color: #efffef;
+  text-shadow: 0 0 5px #ffffff;
+}
+
+@media screen and (max-width: 320px) {
+  header {
+    flex-direction: column;
+  }
+}

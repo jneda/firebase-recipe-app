@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  background: #202020;
+  color: #dfdfdf;
+  font-family: "Courier New", Courier, monospace;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
